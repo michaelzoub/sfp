@@ -130,7 +130,7 @@ def load_task(
         ]
     elif task_name == "code":
         ds = load_dataset(
-            "google-research-datasets/mbpp", "sanitized", split=split, revision="12e9221"
+            "google-research-datasets/mbpp", "sanitized", split=split,
         )
         examples = [
             {"input": row["prompt"], "output": row["code"], "task_id": "code"}
